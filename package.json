@@ -1,0 +1,26 @@
+{
+  "name": "wanderlog-lite",
+  "version": "1.0.0",
+  "description": "A travel planner app that helps users organize their trips and find relevant information.",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "travel",
+    "planner",
+    "wanderlog",
+    "lite"
+  ],
+  "author": "Bundu Kallon",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

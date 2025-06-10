@@ -1,0 +1,26 @@
+[
+  {
+    "name": "New York City",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "description": "The largest city in the United States."
+  },
+  {
+    "name": "Los Angeles",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "description": "Known for its Mediterranean climate and Hollywood."
+  },
+  {
+    "name": "London",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "description": "Capital of England and the United Kingdom."
+  },
+  {
+    "name": "Tokyo",
+    "lat": 35.6895,
+    "lng": 139.6917,
+    "description": "Japan's busy capital, mixes the ultramodern and the traditional."
+  }
+]

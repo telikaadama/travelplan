@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "destination": "Paris",
+    "startDate": "2025-06-10",
+    "endDate": "2025-06-15",
+    "activities": ["Eiffel Tower", "Louvre Museum"],
+    "budget": 1200,
+    "weather": "Sunny",
+    "notes": "Book tickets in advance",
+    "accommodation": "Hotel Paris Centre"
+  }
+]

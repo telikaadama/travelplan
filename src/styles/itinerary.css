@@ -1,0 +1,208 @@
+/* Container for itinerary section */
+#itinerarySection {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(66,133,244,0.08);
+}
+
+/* Form styling */
+#itineraryForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#itineraryForm input,
+#itineraryForm button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+#itineraryForm input[type="date"] {
+  min-width: 120px;
+}
+
+#addItineraryBtn {
+  background: #4285f4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#addItineraryBtn:hover {
+  background: #3367d6;
+}
+
+/* Search and budget inputs */
+#searchInput,
+#budgetInput {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+/* Itinerary list styling */
+#itineraryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#itineraryList li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  background: #f5faff;
+  transition: background 0.2s;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+#itineraryList li strong {
+  color: #4285f4;
+}
+
+/* Itinerary Builder Section */
+section {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(66,133,244,0.07);
+    padding: 2rem 1.5rem;
+    margin: 2rem 0;
+    animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+section h2 {
+    color: #4285F4;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    animation: slideDown 0.5s;
+}
+
+#itinerary-input {
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    width: 60%;
+    transition: border 0.2s;
+}
+#itinerary-input:focus {
+    border: 1.5px solid #4285F4;
+}
+
+#itinerary-add-btn {
+    background: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+#itinerary-add-btn:hover {
+    background: #1565c0;
+    transform: scale(1.05);
+}
+
+#itinerary-list,
+.itinerary-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#itinerary-list li,
+.itinerary-item {
+    background: #f5faff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(66,133,244,0.07);
+    padding: 1rem 1.2rem;
+    font-size: 1.08rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    animation: fadeInUp 0.5s;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#itinerary-list li:hover,
+.itinerary-item:hover {
+    box-shadow: 0 6px 20px rgba(66,133,244,0.13);
+    transform: translateY(-2px) scale(1.01);
+}
+
+.itinerary-destination {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.itinerary-dates {
+    font-size: 1rem;
+    color: #666;
+}
+
+.itinerary-activities {
+    font-size: 0.98rem;
+    color: #333;
+}
+
+.itinerary-budget {
+    font-size: 0.97rem;
+    color: #388e3c;
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 1.2rem 0.5rem;
+    }
+    #itinerary-list li,
+    .itinerary-item {
+        padding: 0.8rem 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+  #itinerarySection {
+    padding: 1rem;
+  }
+  #itineraryForm {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #itineraryForm input,
+  #itineraryForm button {
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to   { opacity: 1; transform: translateY(0);}
+}
