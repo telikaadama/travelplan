@@ -141,5 +141,7 @@ export default function Settings() {
         document.body.classList.add(`maptheme-${theme}`);
     }
 
+    form.setAttribute('action', 'javascript:void(0);');
+
     return container;
 }

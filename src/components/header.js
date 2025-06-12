@@ -15,7 +15,11 @@ export default function Header() {
                 <path fill="#fbfdff" d="M19 12h-2v-1h-1v1h-1v1h1v1h1v-1h2v-1z"/>
             </svg>
         </a>
-        <h1>Travel Planner</h1>
+        <h1>
+          <a href="/" style={{ textDecoration: 'none', color: '#fff' }}>
+            Travel Planner
+          </a>
+        </h1>
         <button class="mobile-menu-btn" aria-label="Open menu" type="button">
             <span class="burger-bg"></span>
             <i class="fas fa-bars"></i>
@@ -167,6 +171,10 @@ export default function Header() {
         }
         .nav-links a.nav-home {
             margin-top: 1.9rem;
+        }
+        h1 a {
+          color: #fff;
+          text-decoration: none;
         }
         @media (max-width: 900px) {
             .logo-container h1 {
