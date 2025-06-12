@@ -90,7 +90,6 @@ export default function Header() {
             position: relative;
             z-index: 1000;
             min-height: 60px;
-            width: 100%;
         }
         .logo-container {
             display: flex;
@@ -141,7 +140,6 @@ export default function Header() {
             gap: 1.2rem;
             align-items: center;
             transition: none;
-            flex-wrap: wrap;
         }
         .nav-links a, .nav-links button {
             color: #fff;
@@ -154,9 +152,6 @@ export default function Header() {
             border-radius: 6px;
             transition: background 0.2s, color 0.2s, transform 0.2s;
             outline: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
         .nav-links a:hover, .nav-links button:hover,
         .nav-links a:focus, .nav-links button:focus {
@@ -170,17 +165,12 @@ export default function Header() {
         .no-scroll {
             overflow: hidden !important;
         }
-        @media (max-width: 1100px) {
-            .nav-links {
-                gap: 0.7rem;
-            }
-            .logo-container h1 {
-                font-size: 1.1rem;
-            }
+        .nav-links a.nav-home {
+            margin-top: 1.9rem;
         }
         @media (max-width: 900px) {
             .logo-container h1 {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             .nav-links a, .nav-links button {
                 font-size: 0.98rem;
@@ -216,8 +206,7 @@ export default function Header() {
                 position: fixed;
                 top: 0;
                 right: 0;
-                height: auto;
-                min-height: 100vh;
+                height: 100vh;
                 width: 80vw;
                 max-width: 340px;
                 z-index: 2000;
@@ -244,12 +233,7 @@ export default function Header() {
                 border-bottom: 1px solid #2156a0;
                 background: none;
                 transition: background 0.2s, color 0.2s, transform 0.2s;
-                display: flex;
-                align-items: center;
-                gap: 0.7rem;
-            }
-            .nav-links a.nav-home {
-                margin-top: 1.5rem;
+                display: block;
             }
             .nav-links a:last-child, .nav-links button:last-child {
                 border-bottom: none;
@@ -270,6 +254,11 @@ export default function Header() {
                 right: 1rem;
                 z-index: 2100;
                 cursor: pointer;
+            }
+            .nav-links {
+                border-radius: 18px 0 0 18px;
+                /* Top-right and bottom-right corners are square, left corners are rounded */
+                /* You can adjust the values for your preferred roundness */
             }
         }
         `;
